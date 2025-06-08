@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Joke Generator</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Random Joke</h1>
+  <% if (joke.type === "single") { %>
+    <p><%= joke.joke %></p>
+  <% } else { %>
+    <p><%= joke.setup %></p>
+    <p><strong><%= joke.delivery %></strong></p>
+  <% } %>
+
+  <a href="/">Get Another Joke</a>
+</body>
+</html>
